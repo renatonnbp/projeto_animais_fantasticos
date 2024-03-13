@@ -230,11 +230,11 @@ body {
     }
 }
 
-.js-tabcontent section {
+[data-tab="content"] section {
     display: none;
 }
 
-.js-tabcontent section.ativo {
+[data-tab="content"] section.ativo {
     display: block;
     animation: show .5s forwards;
 }
@@ -250,21 +250,21 @@ body {
     }
 }
 
-.js-accordion dd {
+[data-anime="accordion"] dd {
     display: none;
 }
 
-.js-accordion dt::after {
+[data-anime="accordion"] dt::after {
     content: '🠋';
     margin-left: 10px;
 }
 
-.js-accordion dt.ativo::after {
+[data-anime="accordion"] dt.ativo::after {
     content: '🠉';
     margin-left: 10px;
 }
 
-.js-accordion dd.ativo {
+[data-anime="accordion"] dd.ativo {
     display: block;
     animation: slideDown .5s forwards;
 }
@@ -280,13 +280,13 @@ body {
     }
 }
 
-.js-scroll {
+[data-anime="scroll"] {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.js-scroll.ativo {
+[data-anime="scroll"].ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
