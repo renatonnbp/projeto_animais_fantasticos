@@ -1,0 +1,60 @@
+@import 'all.css';
+
+[data-menu="button"] {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    [data-menu="button"] {
+        display: flex;
+        background-color: #222;
+        border: none;
+        padding: .5rem .8rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+        align-items: center;
+        position: relative;
+        z-index: 300;
+    }
+    
+    [data-menu="button"]::before {
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        margin-right: 4px;
+        background-color: white;
+        box-shadow: 0 4px white, 0 -4px white;
+        transition: transform .3s;
+    }
+
+    [data-menu="button"].active::before {
+        transform: rotate(90deg);
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        background-color: #FB5;
+        width: 160px;
+        z-index: 200;
+        top: 0;
+        padding: 60px 0 20px 0;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    #menu.active {
+        display: block;
+        animation: show .3s forwards;
+    }
+
+    .dropdown-menu {
+        position: static;
+        border: none;
+    }
+}
