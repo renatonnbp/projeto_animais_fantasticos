@@ -5,6 +5,7 @@ import animacaoScroll from './modules/anima-scroll.js';
 import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
+import outsideClick from './modules/outsideclick.js'
 
 initTabNav();
 initScrollSuave();
@@ -13,3 +14,4 @@ animacaoScroll();
 initModal();
 initTooltip();
 initDropdownMenu();
+outsideClick();
