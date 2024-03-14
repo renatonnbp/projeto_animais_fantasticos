@@ -11,7 +11,7 @@ export default function animacaoScroll() {
                 const isSectionVisible = (sectionTop - windowMetade) < 0;
                 if(isSectionVisible) {
                     section.classList.add(activeClass);
-                } else {
+                } else if(section.classList.contains(activeClass)) {
                     section.classList.remove(activeClass);
                 }
             });
