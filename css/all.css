@@ -45,9 +45,9 @@ body {
     color: #222;
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 1.04rem;
     letter-spacing: .1em;
 }
 
