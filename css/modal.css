@@ -58,28 +58,28 @@
 }
 
 .modal label {
-    font-family: 'IBM Plex Mono', monospace;
-    display: block;
-    font-weight: bold;
-    margin: 1rem 0 .5rem 0;
+  font-family: 'IBM Plex Mono', monospace;
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 .5rem 0;
 }
 
 .modal input {
-    width: 100%;
-    padding: .7rem .5rem;
-    box-sizing: border-box;
+  width: 100%;
+  padding: .7rem .5rem;
+  box-sizing: border-box;
 }
 
 .modal button[type="submit"] {
-    display: block;
-    margin: auto;
-    background: #FB5;
-    border: none;
-    border-radius: 4px;
-    padding: .7rem 2rem;
-    font-size: 1rem;
-    color: rgb(135, 98, 44);
-    font-family: 'IBM Plex Mono', monospace;
-    margin-top: 1rem;
-    font-weight: bold;
+  display: block;
+  margin: auto;
+  background: #FB5;
+  border: none;
+  border-radius: 4px;
+  padding: .7rem 2rem;
+  font-size: 1rem;
+  color: rgb(135, 98, 44);
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1rem;
+  font-weight: bold;
 }
