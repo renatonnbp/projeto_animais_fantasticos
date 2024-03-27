@@ -21,7 +21,7 @@
     position: relative;
     z-index: 300;
   }
-  
+
   [data-menu="button"]::before {
     content: '';
     display: inline-block;

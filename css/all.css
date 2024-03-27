@@ -214,7 +214,7 @@ margin-bottom: 1rem;
   }
   .grid-section {
     grid-template-columns: 100px 1fr;
-    grid-gap: 10px; 
+    grid-gap: 10px;
   }
   .animais-lista {
     grid-column: 1;
@@ -320,5 +320,5 @@ margin-bottom: 1rem;
   background-color: #3F4;
   padding: .2rem .5rem;
   font-weight: bold;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
