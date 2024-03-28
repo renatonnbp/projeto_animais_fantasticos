@@ -16,7 +16,7 @@ export default class Accordion {
     });
   }
 
-  // iniciar função
+  // iniciar a função
   init() {
     if (this.accordionList.length) {
       // ativa o primeiro item
