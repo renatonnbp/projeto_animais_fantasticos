@@ -5,7 +5,8 @@ export default class Modal {
     this.containerModal = document.querySelector(containerModal);
 
     this.eventToggleModal = this.eventToggleModal.bind(this);
-    this.cliqueForaModal = this.eventToggleModal.bind(this);
+    this.eventFecharModal = this.eventFecharModal.bind(this);
+    this.cliqueForaModal = this.cliqueForaModal.bind(this);
   }
 
   toggleModal() {
@@ -13,6 +14,11 @@ export default class Modal {
   }
 
   eventToggleModal(event) {
+    event.preventDefault();
+    this.toggleModal();
+  }
+
+  eventFecharModal(event) {
     event.preventDefault();
     this.toggleModal();
   }
@@ -25,7 +31,7 @@ export default class Modal {
 
   addModalEvents() {
     this.botaoAbrir.addEventListener('click', this.eventToggleModal);
-    this.botaoFechar.addEventListener('click', this.eventToggleModal);
+    this.botaoFechar.addEventListener('click', this.eventFecharModal);
     this.containerModal.addEventListener('click', this.cliqueForaModal);
   }
 
